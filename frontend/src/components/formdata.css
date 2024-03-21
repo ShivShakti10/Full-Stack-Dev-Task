@@ -1,0 +1,107 @@
+/* FormDataPage.css */
+
+.form-data-page {
+    max-width: 800px;
+    margin: 20px auto;
+    color: #161A30;
+    max-height: 100vh;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #B6BBC4;
+    border-radius: 20px;
+  }
+  
+  thead th,
+  tbody td {
+    border: 1px solid #000000;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  thead th {
+    background-color: #F0ECE5;
+    font-weight: bold;
+  }
+  
+  tbody td {
+    vertical-align: top;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #c6cbd4;
+  }
+  
+  tbody tr:hover {
+    background-color:#ffffff;
+    color: #101a2b;
+  }
+  tbody button{
+    background-color: #101a2b;
+    padding: 5px;
+    color: #B6BBC4;
+    border-radius: 5px;
+    margin-top: 6px;
+  }
+
+  tbody button:hover{
+    background-color: #002d7a;
+    padding: 5px;
+    color: #B6BBC4;
+    border-radius: 5px;
+    margin-top: 6px;
+  }
+
+  .lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: 1rem 0;
+  }
+  .lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin-top:  80px;
+    margin-left: 370px;
+    border: 8px solid #e30d5b;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #e30d5b transparent transparent transparent;
+  }
+  .lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+  }
+  .lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+  }
+  .lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+  }
+  
+  @keyframes lds-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes slide-down-fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(-3rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
